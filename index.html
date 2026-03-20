@@ -975,9 +975,7 @@ footer{padding:2rem 3.5rem;border-top:1px solid var(--border);display:flex;justi
 <div id="cv-page">
   <div class="cv-topbar">
     <div class="cv-topbar-left">
-      <span class="cv-topbar-title">// CV — BASIL PALIKODATH THARIAN</span>
-      <span class="cv-ver-badge" id="cv-ver-badge">DEFAULT</span>
-      <span style="font-family:var(--mono);font-size:.6rem;color:var(--muted)">UK Format · Calibri · 11pt · A4</span>
+      <span class="cv-topbar-title">CV - BASIL PALIKODATH THARIAN</span>
     </div>
     <div class="cv-actions">
       <button class="btn btn-green btn-sm" id="pdf-btn" onclick="downloadPDF()">
@@ -1212,7 +1210,7 @@ function renderAll(){
 
   // Update gate entry screen role line
   const gateRoleEl = document.getElementById('gate-role-text');
-  if(gateRoleEl) gateRoleEl.textContent = '// ' + D.title;
+  if(gateRoleEl) gateRoleEl.textContent = D.title;
 
   document.getElementById('tech-render').innerHTML=D.skills.map(s=>{
     const hi=s.highlights.split(',').map(x=>x.trim());
