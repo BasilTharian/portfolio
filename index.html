@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Basil Palikodath Tharian — Automation Engineer</title>
+<title>Basil Palikodath Tharian — Software Test Engineer</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 <script src="https://unpkg.com/docx@8.5.0/build/index.umd.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -42,7 +42,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .orb-1{width:600px;height:600px;background:var(--accent);top:-100px;right:-100px}
 .orb-2{width:400px;height:400px;background:var(--a2);bottom:100px;right:300px;animation:pulse 8s ease-in-out infinite}
 .hero-tag{font-family:var(--mono);font-size:.72rem;color:var(--accent);letter-spacing:.2em;text-transform:uppercase;margin-bottom:1.5rem;opacity:0;animation:fadeUp .8s .2s forwards}
-.hero-tag::before{content:'// '}
+.hero-tag::before{content:''}
 .hero-name{font-size:clamp(3rem,7vw,6.5rem);font-weight:800;line-height:.95;letter-spacing:-.03em;margin-bottom:.5rem;opacity:0;animation:fadeUp .8s .4s forwards}
 .hero-name span{color:var(--accent)}
 .hero-role{font-family:var(--mono);font-size:clamp(.9rem,1.8vw,1.2rem);color:var(--muted);margin-bottom:2rem;opacity:0;animation:fadeUp .8s .6s forwards}
@@ -591,10 +591,10 @@ footer{padding:2rem 3.5rem;border-top:1px solid var(--border);display:flex;justi
     <!-- normal login form -->
     <div id="gate-form">
       <p class="gate-eyebrow">Private Portfolio</p>
-      <h1 class="gate-name">Basil <span>Tharian</span></h1>
-      <p class="gate-role" id="gate-role-text">// Automation Engineer &amp; QA Specialist</p>
+      <h1 class="gate-name">Basil <span>Palikodath Tharian</span></h1>
+      <p class="gate-role" id="gate-role-text">Automation Engineer &amp; QA Specialist</p>
 
-      <label class="gate-label" for="gate-input">Enter access password</label>
+      <label class="gate-label" for="gate-input">Enter Admin access password</label>
       <div class="gate-input-wrap">
         <input class="gate-input" id="gate-input" type="password"
                placeholder="••••••••" maxlength="40" autocomplete="off"
@@ -634,7 +634,7 @@ footer{padding:2rem 3.5rem;border-top:1px solid var(--border);display:flex;justi
 <!-- LOGIN -->
 <div id="login-overlay">
   <div class="login-box">
-    <p class="login-title">// ADMIN ACCESS</p>
+    <p class="login-title">ADMIN ACCESS</p>
     <p class="login-sub">Enter your admin password to manage the portfolio</p>
     <input class="login-input" id="pwd-input" type="password" placeholder="••••••••" maxlength="30">
     <p class="login-error" id="login-err">✗ Incorrect password</p>
@@ -648,7 +648,7 @@ footer{padding:2rem 3.5rem;border-top:1px solid var(--border);display:flex;justi
 <!-- ADMIN PANEL -->
 <div id="admin-panel">
   <div class="admin-header">
-    <span class="admin-title">// PORTFOLIO ADMIN</span>
+    <span class="admin-title">PORTFOLIO ADMIN</span>
     <button class="admin-close" onclick="closeAdmin()">✕ CLOSE</button>
   </div>
   <div class="admin-body">
@@ -688,12 +688,12 @@ footer{padding:2rem 3.5rem;border-top:1px solid var(--border);display:flex;justi
         <p class="ver-form-title" id="ver-form-title">Create New CV Version</p>
 
         <div class="field-group">
-          <label class="field-label">Version Name <span style="color:var(--muted)">(e.g. "AJ Bell — Automation Engineer")</span></label>
+          <label class="field-label">Version Name <span style="color:var(--muted)">(e.g. "Company name — Automation Engineer")</span></label>
           <input class="field-input" id="vf-name" placeholder="Company — Role Title">
         </div>
         <div class="field-group">
-          <label class="field-label">URL Key <span style="color:var(--muted)">(short, no spaces — used in ?ref= link e.g. "ajbell")</span></label>
-          <input class="field-input" id="vf-key" placeholder="ajbell" oninput="this.value=this.value.replace(/[^a-z0-9-]/g,'').toLowerCase()">
+          <label class="field-label">URL Key <span style="color:var(--muted)">(short, no spaces — used in ?ref= link e.g. "xxy")</span></label>
+          <input class="field-input" id="vf-key" placeholder="xxy" oninput="this.value=this.value.replace(/[^a-z0-9-]/g,'').toLowerCase()">
         </div>
         <div class="field-group">
           <label class="field-label">Private Notes <span style="color:var(--muted)">(only visible to you)</span></label>
@@ -998,7 +998,7 @@ footer{padding:2rem 3.5rem;border-top:1px solid var(--border);display:flex;justi
 
 <!-- NAV -->
 <nav>
-  <span class="nav-logo">BPT_PORTFOLIO.js</span>
+  <span class="nav-logo">BPT_PORTFOLIO</span>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#stack">Stack</a></li>
@@ -1077,13 +1077,13 @@ footer{padding:2rem 3.5rem;border-top:1px solid var(--border);display:flex;justi
 </section>
 
 <footer>
-  <span class="footer-text">© 2025 <span class="footer-accent" id="f-name">Basil Palikodath Tharian</span></span>
-  <span class="footer-text" style="font-size:.6rem">HTML · CSS · JS</span>
+  <span class="footer-text">© 2026 <span class="footer-accent" id="f-name">Basil Palikodath Tharian</span></span>
+  <span class="footer-text" style="font-size:.6rem">UK</span>
 </footer>
 
 <script>
 /* ═══════════════════ CONFIG ═══════════════════ */
-const ADMIN_PASSWORD = "basil2025";
+const ADMIN_PASSWORD = "Anjali@879@A";
 
 // Extract only the first emoji from a string — used to sanitise icon fields
 function extractEmoji(str, fallback){
@@ -2694,7 +2694,7 @@ function resetUpload(){
 
 /* ═══════════════════ ENTRY GATE ═══════════════════ */
 /* ═══════════════════ ENTRY GATE ═══════════════════ */
-const PORTFOLIO_PASSWORD = "basil@portfolio";  // ← change this to your chosen password
+const PORTFOLIO_PASSWORD = "Anjali@879@A";  // ← change this to your chosen password
 const MAX_ATTEMPTS = 3;
 const LOCKOUT_SECONDS = 30;
 
